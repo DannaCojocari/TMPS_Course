@@ -1,6 +1,6 @@
 package Lab1.FactoryMethod;
 
-class CinnamonBuns implements IProduct {
+public class CinnamonBuns implements IProduct {
     private String name = "Cinnamon Buns";
     private int grams = 250;
     private double price = 12.5;

@@ -12,11 +12,27 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
+    public IProduct getProduct() {
+        return product;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void increaseQuantity(int quantity) {
+        this.quantity += quantity;
+    }
+
+    public void decreaseQuantity(int quantity) {
+        this.quantity -= quantity;
+    }
+
     public double getItemTotal() {
         return product.getPrice() * quantity;
     }
 
     public String orderItemDetails() {
-        return product.getName() + " x" + quantity + " = " + product.getPrice() + "$";
+        return product.getName() + ": " + quantity + " x " + product.getPrice() + "$";
     }
 }
